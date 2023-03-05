@@ -1,0 +1,26 @@
+name: hub
+main: code\Main
+version: 1.0.0
+api: 4.15.2
+
+author: MapleOS
+description: Gestion du HUB de Xenetix
+website: https://discord.gg/42hPtua
+
+commands:
+  ping:
+    description: Répond Pong
+    usage: "/ping"
+    permission: hub.command.ping
+  opentest:
+    description: ouvre le menu hub
+    usage: "/opentest"
+    permission: hub.panel.open
+
+permissions:
+  hub.command.ping:
+    description: "autorise a ping le serveur"
+    default: true
+  hub.panel.open:
+    description: autorise l'ouverture du panel hub
+    default: true
